@@ -4,10 +4,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        primaryOrange: "#FF9843",
-        secondaryOrange: "#FFDD95",
-        primaryBlue: "#3468C0",
+        primaryDeep: "#EF4040",
+        primaryLight: "#F78CA2",
+        secondaryDeep: "#3468C0",
         secondaryBlue: "#86A7FC",
+      },
+      fontFamily: {
+        montserrat: ["Montserrat", "sans-serif"],
+        roboto: ["Roboto", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
+        rubik: ["Rubik", "sans-serif"],
       },
     },
   },

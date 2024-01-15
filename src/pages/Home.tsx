@@ -1,7 +1,9 @@
+import Nav from "../components/common/Nav";
 
 const Home = () => {
     return (
-        <div className="bg-purple-300">
+        <div >
+            <Nav></Nav>
             hello
         </div>
     );
