@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.gradient-text {
+    background-clip: text;
+    color: transparent;
+    transition: background-position 0.5s ease;
+    background-size: 200% 100%;
+    background-image: linear-gradient(30deg, #FF9843, #FF6868)
+}
+
+.gradient-text:hover {
+    background-position: -100% 0;
+}
+
+
+.gray-gradient-text {
+    background-clip: text;
+    color: transparent;
+    transition: background-position 0.4s ease;
+    background-size: 200% 100%;
+    background-image: linear-gradient(30deg, #A0AEC0, #718096);
+}
+
+.gray-gradient-text:hover {
+    background-position: -100% 0;
+    background-image: linear-gradient(30deg, #FF9843, #FF6868)
+}
