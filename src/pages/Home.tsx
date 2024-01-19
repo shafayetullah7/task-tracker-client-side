@@ -1,7 +1,4 @@
-import Nav from "../components/common/Nav";
-import Banner from "../components/home/header/Banner";
 import Header from "../components/home/header/Header";
-
 import GradientText from "../components/utils/GradientText";
 
 
@@ -15,6 +12,14 @@ const Home = () => {
             </header>
 
             <div className="w-64 h-20 m-20 gradient-background"></div>
+            <p className="text-3xl"><GradientText>Hello World</GradientText></p>
+            <p className="text-3xl"><GradientText>Hello World</GradientText></p>
+
+            <p className="text-3xl"><GradientText>Hello World</GradientText></p>
+
+            <p className="text-3xl"><GradientText>Hello World</GradientText></p>
+            <p className="text-3xl"><GradientText>Hello World</GradientText></p>
+            <p className="text-3xl"><GradientText>Hello World</GradientText></p>
             <p className="text-3xl"><GradientText>Hello World</GradientText></p>
 
         </div>
