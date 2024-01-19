@@ -17,6 +17,7 @@ export default {
       },
       backgroundImage: {
         "primary-gradient": "linear-gradient(30deg, #FF9843, #FF6868)",
+        "hero-banner": "url('/src/assets/image/banner1.jpg')",
       },
     },
   },

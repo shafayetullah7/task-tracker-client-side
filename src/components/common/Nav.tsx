@@ -40,7 +40,7 @@ const Nav = () => {
                 <ul className='hidden md:flex justify-end gap-10 text-[1rem] text-gray-500 font-[500]'>
                     {navItems.map((item, index) => <li className='cursor-pointer hover:font-semibold hover:scale-110 duration-300 active:scale-95' key={index}><GrayGradientText>{item.label}</GrayGradientText></li>)}
                 </ul>
-                <div className='p-[2px] rounded-lg bg-primary-gradient hover:scale-105 active:scale-95 duration-300'>
+                <div className='p-[3px] rounded-lg gradient-background active:scale-95 '>
                     <button className='text-[1rem] px-5 py-1 rounded-md font-[500] hover:text-white bg-white active:scale-95 duration-300'><GradientText>Login</GradientText></button>
                 </div>
 

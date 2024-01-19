@@ -1,12 +1,12 @@
 import { createBrowserRouter } from "react-router-dom";
 import Home from "../pages/Home";
-import DefaultScreen from "../components/common/DefaultScreen";
 import Error from "../pages/Error";
+import MainLayout from "../pages/MainLayout";
 
 const routes = createBrowserRouter([
     {
         path: '/',
-        element: <DefaultScreen></DefaultScreen>,
+        element: <MainLayout />,
         errorElement: <Error></Error>,
         children: [
             {
