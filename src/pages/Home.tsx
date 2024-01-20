@@ -1,5 +1,6 @@
+import Features from "../components/home/features/Features";
 import Header from "../components/home/header/Header";
-import GradientText from "../components/utils/GradientText";
+import DefaultScreen from "../components/utils/DefaultScreen";
 
 
 const Home = () => {
@@ -10,18 +11,13 @@ const Home = () => {
             <header className="relative">
                 <Header></Header>
             </header>
-
-            <div className="w-64 h-20 m-20 gradient-background"></div>
-            <p className="text-3xl"><GradientText>Hello World</GradientText></p>
-            <p className="text-3xl"><GradientText>Hello World</GradientText></p>
-
-            <p className="text-3xl"><GradientText>Hello World</GradientText></p>
-
-            <p className="text-3xl"><GradientText>Hello World</GradientText></p>
-            <p className="text-3xl"><GradientText>Hello World</GradientText></p>
-            <p className="text-3xl"><GradientText>Hello World</GradientText></p>
-            <p className="text-3xl"><GradientText>Hello World</GradientText></p>
-
+            <main>
+                <div className="mt-80 ">
+                    <DefaultScreen>
+                        <Features></Features>
+                    </DefaultScreen>
+                </div>
+            </main>
         </div>
     );
 };

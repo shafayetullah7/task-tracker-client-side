@@ -7,7 +7,7 @@ export default {
         primaryDeep: "#FF9843",
         primaryLight: "#F78CA2",
         secondaryDeep: "#04f9f9",
-        secondaryBlue: "#86A7FC",
+        secondaryLight: "#c2f5f5",
       },
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"],
