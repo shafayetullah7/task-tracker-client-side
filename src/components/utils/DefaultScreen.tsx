@@ -6,7 +6,7 @@ type TdefaultScreenProps = {
 
 const DefaultScreen = ({ children }: TdefaultScreenProps) => {
     return (
-        <div className="max-w-[1280px] mx-auto">
+        <div className="max-w-[1280px]  mx-auto">
             {children}
         </div>
     );

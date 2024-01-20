@@ -1,5 +1,5 @@
 interface GradientTextProps {
-    children: string;
+    children: string|JSX.Element;
 }
 
 const GradientText = ({ children }: GradientTextProps) => {

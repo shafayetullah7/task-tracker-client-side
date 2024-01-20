@@ -6,7 +6,7 @@ export default {
       colors: {
         primaryDeep: "#FF9843",
         primaryLight: "#F78CA2",
-        secondaryDeep: "#3468C0",
+        secondaryDeep: "#04f9f9",
         secondaryBlue: "#86A7FC",
       },
       fontFamily: {

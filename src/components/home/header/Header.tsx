@@ -12,8 +12,10 @@ const Header = () => {
                 <div className="sticky top-0 left-0 right-0 z-20">
                     <Nav></Nav>
                 </div>
-                <div className="absolute inset-0 flex justify-center items-center z-10">
-                    <Banner></Banner>
+                <div className="absolute inset-0 z-10 flex items-center justify-center ">
+                    <div className="flex-1">
+                        <Banner></Banner>
+                    </div>
                 </div>
             </div>
         </div>
