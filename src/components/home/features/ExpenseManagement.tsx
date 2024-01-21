@@ -4,11 +4,8 @@ import expense3 from '../../../assets/image/expense3.jpeg'
 import expense4 from '../../../assets/image/expense4.jpeg'
 import GradientText from '../../utils/GradientText';
 import { motion } from 'framer-motion';
-import { useParallax } from 'react-scroll-parallax';
 
 const ExpenseManagement = () => {
-
-    const { ref } = useParallax<HTMLDivElement>({ speed: 10 });
 
     const expenseOptions = [
         {
@@ -55,10 +52,10 @@ const ExpenseManagement = () => {
     };
 
     return (
-        <div ref={ref}>
+        <div>
             <div className="flex justify-around items-center flex-wrap bg-white rounded-xl p-10 font-montserrat">
                 <motion.div variants={containerVariants} initial='hidden' whileInView='show' className="flex justify-center items-center flex-wrap gap-10 flex-1 ">
-                    {expenseOptions.map((option, index) => (<motion.div key={index} variants={childVariants} whileHover={{ scale: 1.1 }} className='relative w-[200px] h-[200px] rounded-lg overflow-hidden shadow-lg shadow-gray-400 hover:scale-105 duration-200'>
+                    {expenseOptions.map((option, index) => (<motion.div key={index} variants={childVariants} whileHover={{ scale: 1.1 }} className='relative w-[180px] h-[180px] rounded-lg overflow-hidden shadow-lg shadow-gray-400 hover:scale-105 duration-200'>
                         <img src={option.image} className='' alt={`Task option image${index}`} />
                         <div className='absolute inset-0 p-5 bg-gray-950 bg-opacity-10 hover:bg-opacity-70 text-gray-900 hover:text-gray-100 duration-200'>
                             <h3 className='text-xl font-bold'>{option.title}</h3>

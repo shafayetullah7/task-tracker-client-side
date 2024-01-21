@@ -1,4 +1,3 @@
-import { useParallax } from 'react-scroll-parallax';
 import task1 from '../../../assets/image/task1.jpeg'
 import task2 from '../../../assets/image/task2.jpeg'
 import task3 from '../../../assets/image/task3.jpeg'
@@ -8,7 +7,7 @@ import { motion } from 'framer-motion';
 
 const TaskManagement = () => {
 
-    const { ref } = useParallax<HTMLDivElement>({ speed: 10 });
+    
 
     const taskOptions = [
         {
@@ -57,14 +56,14 @@ const TaskManagement = () => {
 
 
     return (
-        <div ref={ref}>
+        <div>
             <div className="flex justify-around items-center flex-wrap bg-white rounded-xl p-10 font-montserrat">
                 <motion.div initial={{opacity:0, y:40}} whileInView={{opacity:1,y:0}} transition={{duration:1, delay:0.5}} className='flex-1'>
                     <h1 className='font-rubik text-5xl font-bold text-gray-900'>Enhancing Team Productivity With <GradientText>Better Task Management</GradientText></h1>
                     <p className='text-sm text-justify mt-10 text-gray-600'>Efficient task management is the cornerstone of a successful team, and our platform offers a robust set of features to streamline and optimize this crucial aspect of your workflow. With a focus on collaboration, transparency, and productivity, our task management tools empower teams to stay organized, meet deadlines, and achieve their goals seamlessly.</p>
                 </motion.div>
                 <motion.div variants={containerVariants} initial='hidden' whileInView='show' className="flex justify-center items-center flex-wrap gap-10 flex-1 ">
-                    {taskOptions.map((option, index) => (<motion.div key={index} variants={childVariants} whileHover={{ scale: 1.1 }} className='relative w-[200px] h-[200px] rounded-lg overflow-hidden shadow-lg shadow-gray-400 hover:scale-105 duration-200'>
+                    {taskOptions.map((option, index) => (<motion.div key={index} variants={childVariants} whileHover={{ scale: 1.1 }} className='relative w-[180px] h-[180px] rounded-lg overflow-hidden shadow-lg shadow-gray-400 hover:scale-105 duration-200'>
                         <img src={option.image} className='' alt={`Task option image${index}`} />
                         <div className='absolute inset-0 p-5 bg-gray-950 bg-opacity-10 hover:bg-opacity-70 text-gray-900 hover:text-gray-100 duration-200'>
                             <h3 className='text-xl font-bold'>{option.title}</h3>

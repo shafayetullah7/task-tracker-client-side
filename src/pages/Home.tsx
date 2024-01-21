@@ -1,3 +1,4 @@
+import Benefits from "../components/home/benefits/Benefits";
 import Features from "../components/home/features/Features";
 import Header from "../components/home/header/Header";
 import DefaultScreen from "../components/utils/DefaultScreen";
@@ -12,9 +13,14 @@ const Home = () => {
                 <Header></Header>
             </header>
             <main>
-                <div className="mt-80 ">
+                <div className="mt-40 ">
                     <DefaultScreen>
                         <Features></Features>
+                    </DefaultScreen>
+                </div>
+                <div className="mt-40 ">
+                    <DefaultScreen>
+                        <Benefits></Benefits>
                     </DefaultScreen>
                 </div>
             </main>
