@@ -1,7 +1,7 @@
 import Lottie from "lottie-react";
 import ErrorAnimation from '../assets/error-animation.json';
 
-import { HomeOutlined } from '@ant-design/icons'
+import { AiOutlineHome } from 'react-icons/ai'
 import { useNavigate } from "react-router-dom";
 const Error = () => {
     const navigate = useNavigate();
@@ -10,7 +10,7 @@ const Error = () => {
             <div>
                 <Lottie animationData={ErrorAnimation} className="w-full px-10 md:w-[500px]" loop={true} />
                 <div className="flex items-center justify-center text-lg gap-3 font-semibold text-primaryOrange w-fit mx-auto border-2 border-primaryOrange px-14 py-3 rounded-full hover:text-white hover:bg-primaryOrange duration-300 cursor-pointer" onClick={() => navigate('/')}>
-                    <HomeOutlined className="text-2xl" />
+                    <AiOutlineHome className="text-2xl" />
                     <p>Home</p>
                 </div>
             </div>

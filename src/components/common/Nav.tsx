@@ -1,9 +1,10 @@
 
 import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { MenuOutlined } from '@ant-design/icons';
+import { AiOutlineMenu } from 'react-icons/ai';
 import GradientText from '../utils/GradientText';
 import GrayGradientText from '../utils/GrayGradientText';
+import { useNavigate } from 'react-router-dom';
 
 type TnavItem = {
     label: string,
@@ -12,6 +13,8 @@ type TnavItem = {
 
 
 const Nav = () => {
+
+    const navigate = useNavigate();
 
     const [collapse, setCollapse] = useState(true);
     const toggleCollapse = () => {
@@ -33,7 +36,7 @@ const Nav = () => {
     return (
         <div className='flex justify-between items-center py-5 px-5 relative w-full'>
             <div className='flex w-fit justify-center items-center gap-5'>
-                <motion.button className='text-xl md:hidden' initial={{ scale: 1 }} whileTap={{ scale: 0.9 }} transition={{ duration: 0.1, damping: 8, stiffness: 250, type: 'spring' }} onClick={toggleCollapse}><MenuOutlined className='mb-2' /></motion.button>
+                <motion.button className='text-xl md:hidden' initial={{ scale: 1 }} whileTap={{ scale: 0.9 }} transition={{ duration: 0.1, damping: 8, stiffness: 250, type: 'spring' }} onClick={toggleCollapse}><AiOutlineMenu className='mb-2' /></motion.button>
                 <h1 className='text-2xl font-bold cursor-pointer'><GradientText>CollaboraTrack</GradientText></h1>
             </div>
             <div className='flex items-center gap-14'>
@@ -41,7 +44,7 @@ const Nav = () => {
                     {navItems.map((item, index) => <li className='cursor-pointer hover:font-semibold hover:scale-110 duration-300 active:scale-95' key={index}><GrayGradientText>{item.label}</GrayGradientText></li>)}
                 </ul>
                 <div className='p-[3px] rounded-lg gradient-background active:scale-95 '>
-                    <button className='text-[1rem] px-5 py-1 rounded-md font-[500] hover:text-white bg-white active:scale-95 duration-300'><GradientText>Login</GradientText></button>
+                    <button className='text-[1rem] px-5 py-1 rounded-md font-[500] hover:text-white bg-white active:scale-95 duration-300' onClick={() => navigate('/auth')}><GradientText>Login</GradientText></button>
                 </div>
 
             </div>

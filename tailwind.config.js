@@ -19,6 +19,7 @@ export default {
         "primary-gradient": "linear-gradient(30deg, #FF9843, #FF6868)",
         "hero-banner": "url('/src/assets/image/banner1.jpg')",
         "parallax-bg1": "url('/src/assets/image/parallax-bg1.png')",
+        "auth-bg": "url('/src/assets/image/auth-bg.png')",
       },
     },
   },
